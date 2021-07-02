@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'nilos-company';
+  loadFeature = 'home'
+
+  onNavigate(feature: string){
+    this.loadFeature = feature;
+  }
 }
